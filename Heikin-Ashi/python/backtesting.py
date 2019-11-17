@@ -6,3 +6,4 @@ def heikenashi_calc (date,startTime,endTime,flag,Prev_HA_Open,Prev_HA_Close):
   latest = response.content
             latest = json.loads(latest)
             latest = latest[0]
+ if(latest["Open"]!=0 and latest["Close"]!=0 and latest["Low"]!=0 and latest["High"]!=0 ):
