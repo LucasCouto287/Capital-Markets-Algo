@@ -15,3 +15,5 @@ return HA_Open_latest,HA_Close_latest
         #do someting
   response = requests.get('https://globalmetals.xignite.com/xGlobalMetals.json/GetBars?Symbol=XAU&Currency=USD&AsOfDate='+date+'&StartTime='+startTime+'&EndTime='+endTime+'&PriceType=Mid&TickPrecision=Minute&TickPeriods=120&_token=F1EA90FFBFF4462993E99968CE39F08C')
         if(response.status_code == 200):
+ latest = response.content
+            latest = json.loads(latest)
