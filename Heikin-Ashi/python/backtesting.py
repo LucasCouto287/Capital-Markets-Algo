@@ -17,3 +17,5 @@ return HA_Open_latest,HA_Close_latest
         if(response.status_code == 200):
  latest = response.content
             latest = json.loads(latest)
+ latest = latest[0]
+            if(latest["Open"]!=0 and latest["Close"]!=0 and latest["Low"]!=0 and latest["High"]!=0 ):
