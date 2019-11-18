@@ -28,3 +28,6 @@ if(HA_Open_Current<HA_Close_Prev):
         return True
   else:
         return False
+
+Prev_HA_Open, Prev_HA_Close = (heikenashi_calc("5/9/2018","00:00","02:00",0,1313.60,1315.33))
+a = heikenashi_predict(Prev_HA_Open,Prev_HA_Close)
