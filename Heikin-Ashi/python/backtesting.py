@@ -24,3 +24,5 @@ HA_Open_latest = (Prev_HA_Close+Prev_HA_Open) /2
    return HA_Open_latest,HA_Close_latest
 
 def heikenashi_predict(HA_Open_Current,HA_Close_Prev):
+if(HA_Open_Current<HA_Close_Prev):
+        return True
