@@ -21,3 +21,6 @@ return HA_Open_latest,HA_Close_latest
             if(latest["Open"]!=0 and latest["Close"]!=0 and latest["Low"]!=0 and latest["High"]!=0 ):
 HA_Open_latest = (Prev_HA_Close+Prev_HA_Open) /2
                 HA_Close_latest = (latest["Open"] + latest["Close"] +  latest["Low"] + latest["High"]) /4
+   return HA_Open_latest,HA_Close_latest
+
+def heikenashi_predict(HA_Open_Current,HA_Close_Prev):
