@@ -33,3 +33,5 @@ Prev_HA_Open, Prev_HA_Close = (heikenashi_calc("5/9/2018","00:00","02:00",0,1313
 a = heikenashi_predict(Prev_HA_Open,Prev_HA_Close)
 print (a,Prev_HA_Open,Prev_HA_Close)
 Prev_HA_Open, Prev_HA_Close = (heikenashi_calc("5/9/2018","02:00","04:00",1,Prev_HA_Open,Prev_HA_Close))
+a = heikenashi_predict(Prev_HA_Open,Prev_HA_Close)
+print (a,Prev_HA_Open,Prev_HA_Close)
