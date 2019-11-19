@@ -14,7 +14,7 @@
 <p align="center">
   <a>
     <img src=""
-         alt="Travis Build">
+         alt="">
   </a>
 </p>
 <br>
