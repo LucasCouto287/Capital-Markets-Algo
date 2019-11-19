@@ -33,4 +33,13 @@ def sms():
             if(HA_Close_latest == 0):  
                 HA_Open_latest = (1320.978+1319.854) /2
             else:
-
+ HA_Open_latest = (HA_Open_latest+HA_Close_latest)/2
+            HA_Close_latest = (latest["Open"] + latest["Close"] +  latest["Low"] + latest["High"]) /4
+            account_sid = '****'
+            auth_token = '****'
+            client = Client(account_sid, auth_token)
+            if (HA_Open_latest < HA_Close_latest):
+                message = client.messages.create(
+                                        body="Buy",
+                                        from_="****",
+                                        to="****"
