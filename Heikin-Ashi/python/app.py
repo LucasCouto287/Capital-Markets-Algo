@@ -58,3 +58,6 @@ def run_schedule():
 if __name__ == '__main__':
 schedule.every().day.at("01:00").do(sms)
  schedule.every().day.at("03:00").do(sms)
+schedule.every().day.at("05:00").do(sms)
+    schedule.every().day.at("07:00").do(sms)
+    schedule.every().day.at("09:00").do(sms)
