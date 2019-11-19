@@ -43,3 +43,9 @@ def sms():
                                         body="Buy",
                                         from_="****",
                                         to="****"
+ else:
+                message = client.messages.create(
+                                        body="Sell",
+                                        from_="****",
+                                        to="****"
+                                    )
