@@ -54,3 +54,5 @@ def run_schedule():
     while 1:
         schedule.run_pending()
         time.sleep(1)  
+
+if __name__ == '__main__':
