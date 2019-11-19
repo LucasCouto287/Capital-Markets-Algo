@@ -14,3 +14,15 @@ HA_Open_latest = 0
 global temp
 temp = 0
 def sms():
+    print("Running periodic task!")
+    utc_datetime_current = datetime.datetime.utcnow()
+    utc_datetime_prev = utc_datetime_current - timedelta(hours=2)
+    utc_datetime_prev = utc_datetime_prev.strftime("%Y/%m/%d %H:%M")
+    utc_datetime_current = utc_datetime_current.strftime("%Y/%m/%d %H:%M")
+    split_utc_datetime_current = utc_datetime_current.strip(' ')
+    date_utc_datetime_current = split_utc_datetime_current[0]
+    time_utc_datetime_current = split_utc_datetime_current[1]
+    split_datetime_prev = utc_datetime_prev.strip(' ')
+    time_utc_datetime_prev = split_utc_datetime_prev[1]
+    response = requests.get('https://globalmetals.xignite.com/xGlobalMetals.json/GetBars?Symbol=XAU&Currency=USD&AsOfDate='+date_utc_datetime_current+'&StartTime='+time_utc_datetime_prev+'&EndTime='+time_utc_datetime_current+'&PriceType=Mid&TickPrecision=Minute&TickPeriods=120&_token=F1EA90FFBFF4462993E99968CE39F08C')
+  
