@@ -57,3 +57,4 @@ def run_schedule():
 
 if __name__ == '__main__':
 schedule.every().day.at("01:00").do(sms)
+ schedule.every().day.at("03:00").do(sms)
