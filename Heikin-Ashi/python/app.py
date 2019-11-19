@@ -49,3 +49,8 @@ def sms():
                                         from_="****",
                                         to="****"
                                     )
+
+def run_schedule():
+    while 1:
+        schedule.run_pending()
+        time.sleep(1)  
