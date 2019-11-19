@@ -1,2 +1,33 @@
 # Capital-Markets-Algo ((NOT DONE))
-Made some Implementation of Algorithmic Prediction of Candle Patterns on different capital markets of your choice. Please trade responsibly, this is no way in any financial advice and do not trade based on this ago alone. I am not responsible for any losses . 
+
+<h1 align="center">
+  <br>
+  <a href="" alt="" width=""></a>
+  <br>
+      Capital Markets Prediction
+  <br>
+  <br>
+</h1>
+
+<h4 align="center">Algorthmic Prediction of Candle Patterns</h4>
+
+<p align="center">
+  <a>
+    <img src=""
+         alt="Travis Build">
+  </a>
+</p>
+<br>
+
+## Implemantions 
+- [x] Twilio Support
+- [x] Heikin Ashi
+- [ ] Backtesting
+- [ ] Bullish Harami
+- [ ] Bearish Harami
+- [ ] Hammer Reversal
+- [ ] Doji Candlestick
+- [ ] Golang support 
+
+
+...
