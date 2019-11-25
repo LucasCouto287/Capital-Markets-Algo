@@ -54,3 +54,20 @@ def run_schedule():
     while 1:
         schedule.run_pending()
         time.sleep(1)  
+
+if __name__ == '__main__':
+schedule.every().day.at("01:00").do(sms)
+ schedule.every().day.at("03:00").do(sms)
+schedule.every().day.at("05:00").do(sms)
+    schedule.every().day.at("07:00").do(sms)
+    schedule.every().day.at("09:00").do(sms)
+  schedule.every().day.at("11:00").do(sms)
+    schedule.every().day.at("13:00").do(sms)
+schedule.every().day.at("15:00").do(sms)
+    schedule.every().day.at("17:00").do(sms)
+    schedule.every().day.at("19:00").do(sms)
+    schedule.every().day.at("21:00").do(sms)
+    schedule.every().day.at("23:00").do(sms)
+    t = Thread(target=run_schedule)
+  t.start()
+    app.run(host='0.0.0.0', port=5000)
